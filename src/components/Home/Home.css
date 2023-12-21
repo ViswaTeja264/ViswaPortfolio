@@ -1,0 +1,84 @@
+.home {
+    height: calc(100vh - 5rem);
+    width: 100vw;
+    max-width: 80rem;
+    margin: 0 auto;
+    overflow: hidden;
+    position: relative;
+  }
+  
+  .homeImg {
+    position: absolute;
+    z-index: -1;
+    top: -4rem;
+    right: 0;
+    object-fit: cover;
+    height: 100vh;
+  }
+  
+  .homeContent {
+    height: 100vh;
+    width: 100%;
+    padding: 2rem;
+    font-size: 3rem;
+    font-weight: 700;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: white;
+  }
+  
+  .hello {
+    font-size: 1.5rem;
+    font-weight: 100;
+    margin: 0.2rem 0;
+  }
+  
+  .HomeText {
+    margin: 0.2rem 0;
+  }
+  
+  .HomeName {
+    color: rgba(18, 173, 235, 0.989);
+  }
+  
+  .HomeBio {
+    font-size: medium;
+    font-weight: 300;
+    text-align: justify;
+    margin: 0.2rem 0;
+  }
+  
+  @media screen and (max-width: 1200px) {
+    .homeImg {
+      right: -10vw;
+    }
+    .homeContent {
+      font-size: 8vw;
+    }
+    .hello {
+      font-size: 4.5rem;
+    }
+  }
+  
+  @media screen and (max-width: 840px) {
+    .home {
+      width: 80%;
+    }
+    .homeImg {
+      right: -20vw;
+    }
+  }
+  
+  @media screen and (max-width: 760px) {
+    .homeImg {
+      right: -30vw;
+    }
+  }
+  
+  @media screen and (max-width: 480px) {
+    .homeImg {
+      right: -40vw;
+    }
+  }
+  

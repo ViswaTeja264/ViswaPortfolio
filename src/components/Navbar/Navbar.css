@@ -1,0 +1,101 @@
+.navbar {
+  height: 5rem;
+  width: 100vw;
+  max-width: 80rem;
+  margin: 0 auto;
+  padding: 1rem 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: sticky;
+  top: 0;
+  z-index: 3;
+  background: #303030;
+}
+
+.logo {
+  object-fit: cover;
+  height: 3rem;
+  width: 4rem;
+  cursor: pointer;
+}
+
+.menu-icon {
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+}
+
+.bar {
+  width: 20px;
+  height: 2px;
+  background-color: white;
+  margin: 4px 0;
+  transition: 0.4s;
+}
+
+.desktopMenu {
+  width: auto;
+  margin: 0 5rem;
+  display: flex;
+}
+
+.desktopMenuListItems {
+  color: white;
+  margin: 1rem 1.5rem;
+  cursor: pointer;
+}
+
+.desktopMenuListItems:hover {
+  color: skyblue;
+  padding-bottom: 0.5rem;
+  border-bottom: 3px solid rgba(18, 173, 235, 0.989);
+}
+
+.resume {
+  width: 100px;
+  height: 50px;
+  cursor: pointer;
+  border-radius: 1.5rem;
+  border: 2px solid rgba(18, 173, 235, 0.989);
+  font-size: 1rem;
+  background: transparent;
+}
+
+.resume:hover {
+  background-color: rgba(18, 173, 235, 0.989);
+}
+
+/* Responsive Styles */
+@media screen and (max-width: 768px) {
+  .desktopMenu {
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    position: absolute;
+    top: 5rem;
+    left: 0;
+    width: 100%;
+    background: #303030;
+    text-align: center;
+  }
+
+  .desktopMenu.show {
+    display: flex;
+  }
+
+  .menu-icon {
+    display: flex;
+  }
+
+  .desktopMenuListItems {
+    margin: 1rem 0;
+  }
+
+  .desktopMenuListItems:hover,
+  .desktopMenuListItems.show:hover {
+    color: skyblue;
+    padding-bottom: 0.5rem;
+    border-bottom: 3px solid rgba(18, 173, 235, 0.989);
+  }
+}

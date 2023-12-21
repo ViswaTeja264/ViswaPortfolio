@@ -1,0 +1,117 @@
+.about {
+  width: 100vw;
+  max-width: 80vw;
+  margin: 3rem auto;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.mySelf {
+  padding: 0 1rem;
+  height: 35rem;
+  width: 27.5rem;
+  border-radius: 1rem;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  background-color: rgba(18, 173, 235, 0.989);
+}
+
+.aboutContent {
+  width: 50rem;
+  display: flex;
+  margin: 2.5rem;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.EduExp {
+  margin: 2rem;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  gap: 2rem;
+}
+
+.education,
+.experience {
+  width: 20rem;
+  padding: 1rem;
+  background-color: rgba(57, 57, 57, 0.938);
+  border-radius: 1rem;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+.education:hover,
+.experience:hover {
+  transform: translateY(-15px);
+}
+
+.educationTitle,
+.experienceTitle {
+  font-size: 1.25rem;
+  font-weight: 400;
+  text-align: center;
+}
+
+.mydata1,
+.mydata2 {
+  margin: 1rem 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.btech,
+.inter,
+.tenth,
+.exp1,
+.exp2,
+.exp3 {
+  display: flex;
+  flex-direction: column;
+  font-size: small;
+  font-weight: 300;
+}
+
+.btechTitle,
+.interTitle,
+.tenthTitle,
+.exp1Title,
+.exp2Title,
+.exp3Title {
+  color: rgba(18, 173, 235, 0.989);
+  margin-bottom: 1rem;
+}
+
+@media screen and (max-width: 1200px) {
+  .about {
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+  }
+
+  .mySelf {
+    width: 100%;
+    max-width: 350px;
+    height: auto;
+    margin-bottom: 2rem;
+  }
+
+  .aboutContent {
+    width: 100%;
+    text-align: center;
+  }
+
+  .EduExp {
+    flex-direction: column;
+  }
+
+  .education,
+  .experience {
+    width: 100%;
+    margin: 0 0 1.5rem;
+  }
+}
